@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">EezyGuest</string>
+    <string name="mapbox_access_token"></string>
+
+
+    <string name="privacypolicy">We value your trust and are committed to protecting your privacy. This Privacy Policy is meant to explain, in plain language (with a little bit of “blah blah” so the lawyers are happy), that: we don’t collect your personal data, we don’t track you, we don’t sell your information, and you are fully in control of whatever you store in our app.
+
+        1. What We Collect:
+
+        Absolutely Nothing.
+        Neither the developers, nor the app itself, collect, harvest, or sell your personal data.
+
+        We don’t ask for your location unless the feature you choose literally needs it (and even then, it stays with you).
+
+        We don’t track your browsing, your clicks, your device ID, or anything else.
+
+        2. Who Owns the Data?
+
+        You do. Everything you put into the app, whether it’s your account details, posts, rooms, bookings, or whatever else, is yours.
+
+        The app saves data in a database only for functionality (so you can log in again, view rooms, keep your history, etc.). That database is purely for running the service, not for spying.
+
+        At no point do the developers take, copy, or redistribute your information.
+
+        3. What About Servers and Databases?
+
+        Data stored in the app’s database is tied to your account, so you can retrieve it later.
+
+        The database is not mined for marketing, advertising, or analytics.
+
+        No third party is given access.
+
+        Once again: blah blah, you’re in charge.
+
+        4. Third-Party Services
+
+        If the app uses external services (like Firebase, Google Sign-In, or Payment Gateways), those services have their own privacy policies.
+
+        We do not control how those services handle data, but we do not pass them anything extra beyond what’s strictly required for the app to function.
+
+        5. Security
+
+        We take reasonable steps to protect whatever is stored.
+
+        But as with all online systems, no database is 100% unhackable. By using the app, you acknowledge that risk.
+
+        That said, since we don’t collect or sell your info, there’s not much to “steal” anyway.
+
+        6. Your Choices and Control
+
+        You can add, edit, or delete your information anytime through the app.
+
+        If you delete your account, all associated data is wiped.
+
+        We don’t keep hidden backups of your personal data.
+
+        7. Children’s Privacy
+
+        This app is not designed to knowingly collect any data from children under the age of 13.
+
+        Again, since we don’t collect data at all, this shouldn’t be an issue, but legal text requires us to say it.
+
+        8. Changes to this Policy
+
+        If we ever update this Privacy Policy, we’ll notify you inside the app.
+
+        But remember: our core principle will never change — your data is yours, not ours.</string>
+
+
+    <string-array name="predefined_values">
+        <item>Anantnag</item>
+        <item>Bandipora</item>
+        <item>Baramulla</item>
+        <item>Budgam</item>
+        <item>Ganderbal</item>
+        <item>Kulgam</item>
+        <item>Kupwara</item>
+        <item>Pulwama</item>
+        <item>Shopian</item>
+        <item>Srinagar</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
+</resources>

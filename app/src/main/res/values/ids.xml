@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="roompic1" type="id"/>
+    <item name="roompic2" type="id"/>
+    <item name="roompic3" type="id"/>
+    <item name="roompic111" type="id"/>
+    <item name="roompic222" type="id"/>
+    <item name="roompic333" type="id"/>
+
+    <item name="roompic1button" type="id"/>
+    <item name="roompic2button" type="id"/>
+    <item name="roompic3button" type="id"/>
+    <item name="roompic111button" type="id"/>
+    <item name="roompic222button" type="id"/>
+    <item name="roompic333button" type="id"/>
+</resources>

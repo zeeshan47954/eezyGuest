@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|center_vertical"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact us"
+        android:layout_gravity="center"
+
+        android:textSize="30sp"
+        android:textColor="@color/red"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you have any questions,complaints,you can reach out to the developer at:"
+        android:layout_gravity="center"
+android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/teal"/>
+    <!-- WhatsApp Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/gmail"
+            android:contentDescription="WhatsApp Icon"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/whatsapp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tetsuyanaito1281@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/teal"/>
+    </LinearLayout>
+
+    <!-- Email Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/gmail"
+            android:contentDescription="Email Icon"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="owaismuzaffar5@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/teal"/>
+    </LinearLayout>
+
+</LinearLayout>

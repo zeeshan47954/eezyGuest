@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DistrictFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundshape"
+        android:text="Select District"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupDistricts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbAnantnag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anantnag"
+            android:buttonTint="@color/teal"
+            android:textColor="@color/teal"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbBandipora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandipora"
+            android:buttonTint="@color/teal"
+            android:textColor="@color/teal"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbBaramulla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baramulla"
+            android:buttonTint="@color/teal"
+            android:textColor="@color/teal"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbBudgam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budgam"
+            android:buttonTint="@color/teal"
+            android:textColor="@color/teal"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbGanderbal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganderbal"
+            android:buttonTint="@color/teal"
+            android:textColor="@color/teal"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbKulgam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kulgam"
+            android:buttonTint="@color/teal"
+            android:textColor="@color/teal"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbKupwara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kupwara"
+            android:buttonTint="@color/teal"
+            android:textColor="@color/teal"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbPulwama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pulwama"
+            android:buttonTint="@color/teal"
+            android:textColor="@color/teal"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbShopian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shopian"
+            android:buttonTint="@color/teal"
+            android:textColor="@color/teal"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbSrinagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Srinagar"
+            android:buttonTint="@color/teal"
+            android:textColor="@color/teal"
+            android:padding="8dp"/>
+
+    </RadioGroup>
+
+</LinearLayout>

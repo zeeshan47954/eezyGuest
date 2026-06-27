@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/rooms"
+android:title="book a room"
+            android:checked="true" />
+        <item
+            android:id="@+id/helpandsupport"
+
+            app:titleTextAppearance="@style/MenuItemStyle"
+            android:title="Help And Support" />
+        <item
+            android:id="@+id/feedback"
+
+            app:titleTextAppearance="@style/MenuItemStyle"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/termsconditions"
+
+            app:titleTextAppearance="@style/MenuItemStyle"
+            android:title="Terms and  Conditions" />
+
+
+    </group>
+
+</menu>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="checking status please standby"
+
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/backgroundshape2"
+        android:textColor="@color/teal"
+        android:padding="5dp"
+        android:textSize="18sp"
+         />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@id/progressBar"
+        android:indeterminateTint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default Text"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:background="@drawable/backgroundshape2"
+        android:textColor="@color/teal"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

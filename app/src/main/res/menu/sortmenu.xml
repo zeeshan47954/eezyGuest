@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ascending"
+        android:title="oldest to latest"
+        android:icon="@drawable/trendingup"
+        android:orderInCategory="1"
+        app:iconTint="@null"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/descending"
+        android:title="latest to oldest"
+        android:icon="@drawable/trendingdown"
+        android:orderInCategory="2"
+        app:iconTint="@null"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,115 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Room Details CardView (Clickable) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardElevation="6dp"
+        card_view:cardCornerRadius="8dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+
+            <ImageView
+                android:id="@+id/imv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Tenant Details:click to view"
+                android:textSize="18sp"
+                android:background="@drawable/backgroundshape"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tenant Details CardView (Clickable) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardElevation="6dp"
+        card_view:cardCornerRadius="8dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+
+            <ImageView
+                android:id="@+id/imv2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Details:click to view"
+                android:textSize="18sp"
+                android:background="@drawable/backgroundshape"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="8dp" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Buttons at Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="12dp">
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fancy_button_background"
+            android:text="Accept"
+            android:textColor="@color/white"
+            android:src="@drawable/tick"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fancy_button_background"
+            android:text="Reject"
+            android:textColor="@color/white"
+            android:layout_marginRight="16dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

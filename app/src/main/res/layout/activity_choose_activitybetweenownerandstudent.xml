@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/teal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chooseActivitybetweenownerandstudent">
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       app:cardCornerRadius="24dp"
+       app:cardElevation="8dp">
+
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           xmlns:tools="http://schemas.android.com/tools"
+
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           tools:context=".chooseActivitybetweenownerandstudent">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="choose between owner and student"
+               android:background="@drawable/backgroundshape"
+               android:layout_gravity="center|top"
+               android:textAlignment="center"
+               android:layout_margin="10dp"
+               android:textSize="30dp"
+               android:textColor="@color/white"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="we found your two instances"
+               android:textColor="@color/white"
+               android:textSize="30dp"
+               android:textAlignment="center"
+               android:background="@drawable/backgroundshape"
+               android:layout_gravity="center"
+
+               android:layout_marginTop="100dp"
+               android:layout_margin="10dp"/>
+           <Button
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginTop="100dp"
+
+               android:text="continue as student"
+               android:background="@drawable/backgroundshape"
+               android:textSize="20dp"
+               android:textColor="@color/white"
+               android:drawableStart="@drawable/student"/>
+           <Button
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+
+               android:layout_margin="100dp"
+               android:text="continue as owner"
+               android:background="@drawable/backgroundshape"
+               android:textSize="20dp"
+               android:textColor="@color/white"
+               android:drawableStart="@drawable/apartment"/>
+
+
+       </LinearLayout>
+
+
+
+
+
+   </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

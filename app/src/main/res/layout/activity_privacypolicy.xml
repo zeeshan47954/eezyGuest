@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".privacypolicy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Container inside ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textColor="@color/red"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal"
+                android:text="We value your trust and are committed to protecting your privacy. This Privacy Policy explains in clear and simple terms that we do not collect your personal data, we do not track you, we do not sell your information, and you remain fully in control of whatever information you store in this application.
+
+The application itself does not harvest, share, or sell any personal data. It does not request access to your location unless a specific feature requires it, and in that case, the information remains with you and is not transmitted to the developers. The application does not track your browsing activity, device identifiers, or any other personal information.
+
+Any data you provide is entirely yours. Information such as your account details, posts, room bookings, or other records that you may choose to create within the app remain your property. Data is stored only for the purpose of enabling the core functions of the application, such as allowing you to log in, view your history, or access saved records. This storage exists solely to maintain functionality and not for any secondary purposes such as advertising, marketing, or analytics. At no point are your details copied, shared, or distributed by the developers.
+
+The application relies on a database to link stored information to your account so you may access it when needed. This database is used strictly to provide the services you have requested and is not used for data mining. No third party is granted access to your information, and there is no commercialization of any stored records.
+
+If the application uses third-party services such as Firebase, Google Sign-In, or payment providers, those external services are governed by their own privacy policies. While we do not control how those services handle information, we only transmit the minimum data necessary to allow the service to function. No additional or unnecessary data is shared.
+
+We take reasonable steps to secure the data that is stored. However, no system connected to the internet can ever be guaranteed to be completely secure. By using the application, you acknowledge this inherent risk. Nevertheless, since we do not collect, sell, or exploit your data, the exposure of sensitive information is significantly minimized.
+
+You remain in complete control of your information at all times. You may add, edit, or delete your data whenever you wish through the features provided in the app. If you decide to delete your account, all associated information is permanently erased from the system. There are no hidden archives or backups retained once deletion occurs.
+
+This application is not designed to knowingly collect data from children under the age of 13. Since no data is collected by default, this is not expected to create any issues, but this clarification is provided to comply with legal requirements.
+
+If this Privacy Policy is ever updated, notification of the changes will be provided through the application itself. Despite any updates, the fundamental principle of this policy will remain the same: your data belongs to you, and we do not use it for any purpose beyond enabling the app to function as intended.
+"
+                android:textSize="16sp"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

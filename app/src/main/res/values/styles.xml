@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style  name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#008080</item>
+        <item name="colorAccent">#008080</item>
+        <item name="colorPrimaryDark">#004D4D</item>
+    </style>
+
+    <style name="MenuItemStyle" parent="TextAppearance.AppCompat.Menu">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+        <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+            <!-- Remove the default action bar -->
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+
+</resources>
+

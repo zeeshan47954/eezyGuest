@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:background="@color/teal"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbmain"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Tenant Information"
+            app:titleTextColor="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:padding="16dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:backgroundTint="@android:color/white"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <EditText
+                                android:id="@+id/ownername"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/backgroundshape2"
+                                android:hint="Name"
+                                android:inputType="textMultiLine"
+                                android:textColor="@color/teal"
+                                android:textColorHint="@color/teal" />
+
+                            <EditText
+                                android:id="@+id/owneraddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/backgroundshape2"
+                                android:hint="Full Address"
+                                android:inputType="textMultiLine"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/teal"
+                                android:textColorHint="@color/teal" />
+
+                            <EditText
+                                android:id="@+id/ownernumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/backgroundshape2"
+                                android:hint="Contact No"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:textColor="@color/teal"
+                                android:textColorHint="@color/teal" />
+
+                            <EditText
+                                android:id="@+id/adhaarno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/backgroundshape2"
+                                android:hint="Enter Aadhaar"
+                                android:inputType="phone"
+                                android:maxLength="12"
+                                android:textColor="@color/teal"
+                                android:textColorHint="@color/teal" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:backgroundTint="@android:color/white"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/backgroundshape"
+                                android:padding="10dp"
+                                android:text="Gender"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <RadioGroup
+                                android:id="@+id/rggender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center">
+
+                                <RadioButton
+                                    android:id="@+id/rbmale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Male"
+                                    android:textColor="@color/teal"
+                                    android:buttonTint="@color/teal"
+                                    android:layout_marginEnd="24dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/rbfemale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Female"
+                                    android:textColor="@color/teal"
+                                    android:buttonTint="@color/teal" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                    <TextView
+                        android:id="@+id/monthtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/backgroundshape"
+                        android:text="niggesh"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:padding="5dp"
+                        android:background="@drawable/backgroundshape90"
+                        android:text="**Note\n1.The app will help you get the room of your choice and help pay for the first month\n2.a request will be made to the owner once you click 'proceed' below
+\n3.owner can accept or reject your request\n4.once the user accepts,you will have 24 hours to make payment
+(failing to do so,will result in cancellation)
+\n5.once you make the payment,you will be provided with the details of the room and the owner\n6.once booked,you will have 2 days to cancel your booking and request for refund\n7.you will receive a refund of the total amount minus 18% GST upon cancellation"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="16dp"
+                        android:background="@drawable/backgroundshape"
+android:id="@+id/rctextview"
+                        android:textAlignment="center"
+                        android:text="niggesh"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                    <EditText
+                        android:id="@+id/rc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/backgroundshape2"
+android:layout_margin="16dp"
+                        android:paddingLeft="5dp"
+                        android:inputType="number"
+                        android:hint="enter the no. of spots"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/teal"
+                        android:textColorHint="@color/teal" />
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:padding="5dp"
+                        android:background="@drawable/backgroundshape"
+android:layout_gravity="center"
+                        android:text="upload  Adhaar card front side"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/roompic1"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:layout_marginBottom="20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/roompic" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                        android:backgroundTint="@android:color/white"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/roompic1button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/fancy_button_background"
+                                android:text="Choose"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:padding="5dp"
+                        android:background="@drawable/backgroundshape"
+                        android:layout_gravity="center"
+                        android:text="upload  Adhaar card back side"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/roompic2"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/roompic" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@android:color/white"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/roompic2button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/fancy_button_background"
+                                android:text="Choose"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:padding="5dp"
+                        android:background="@drawable/backgroundshape"
+                        android:layout_gravity="center"
+                        android:text="upload profile picture"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+
+
+                    <ImageView
+                        android:id="@+id/roompic3"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:adjustViewBounds="true"
+
+                        android:src="@drawable/roompic" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@android:color/white"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/roompic3button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/fancy_button_background"
+                                android:text="Choose"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:text="proceed below to make request to the owner"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textColor="@color/teal"
+                        android:textSize="20dp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@android:color/white"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="6dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/submitbutton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/fancy_button_background"
+                                android:onClick="submit"
+                                android:text="proceed"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

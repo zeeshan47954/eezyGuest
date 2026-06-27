@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/main"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity6">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/abl"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ct"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary">
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        app:layout_collapseMode="parallax"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:orientation="horizontal">
+
+    <!-- Dots Indicator -->
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="bottom|center"
+                android:src="@drawable/arrowleft"
+                />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/dotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_gravity="bottom|center"
+
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabMaxWidth="10dp"
+        app:tabMinWidth="10dp"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="bottom|center"
+                android:src="@drawable/arrowright"
+                />
+            <!-- ViewPager2 for sliding images -->
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tb"
+                app:titleTextColor="@color/teal"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="16dp">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:shimmer_auto_start="true"
+                app:shimmer_duration="1500"
+                app:shimmer_repeat_delay="1000"
+                app:shimmer_repeat_mode="restart">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="editphotos"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/fancy_button_background"
+                    android:textColor="@color/nav_item_color"
+                    android:text="remove or add more photos"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="8dp"
+
+                android:layout_margin="5dp"
+                app:cardElevation="4dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="5dp"
+                        android:layout_height="4dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="owner  Name:"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal"
+                        android:textSize="17dp"
+                        android:visibility="gone" />
+                      <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:id="@+id/request"
+                        android:layout_margin="10dp"
+                        android:text="make request"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:background="@drawable/fancy_button_background"
+                        android:onClick="request"/>
+
+
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="3dp"
+
+                        android:hint="ROOM DETAILS:"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColorHint="@color/teal" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="room address:"
+                        android:layout_marginBottom="10dp"
+
+                        android:textSize="17dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal"/>
+                    <EditText
+                        android:id="@+id/roomlocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:background="@drawable/backgroundshape2"
+                        android:focusable="false"
+                        android:inputType="textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"
+                        android:ellipsize="none"
+                        android:overScrollMode="always"
+
+                        android:textColor="@color/teal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="room name:"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="17dp"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/teal"/>
+                    <EditText
+                        android:id="@+id/roomname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backgroundshape2"
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+
+                        android:focusable="false"
+                        android:inputType="textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"
+                        android:ellipsize="none"
+                        android:overScrollMode="always"
+                        android:textColor="@color/teal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="nearest institution:"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="17dp"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/teal"/>
+                    <EditText
+                        android:id="@+id/institution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backgroundshape2"
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:inputType="textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"
+                        android:ellipsize="none"
+                        android:overScrollMode="always"
+                        android:textColor="@color/teal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="room price per head:"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="17dp"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/teal"/>
+                    <EditText
+                        android:id="@+id/roompricing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+
+                        android:inputType="number"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:background="@drawable/backgroundshape2"
+                        android:textColor="@color/teal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="room capacity:"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="17dp"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/teal"/>
+                    <EditText
+                        android:id="@+id/roomcapacity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:focusable="false"
+                        android:background="@drawable/backgroundshape2"
+                        android:textColor="@color/teal" />
+
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="10dp"
+                        android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="district"
+
+                        android:textSize="20sp"
+                        android:textColorHint="@color/teal" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:enabled="false"
+                        android:background="@drawable/backgroundshape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:entries="@array/predefined_values"
+                        android:layout_marginBottom="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="contact no:"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="17dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/teal"/>
+                    <EditText
+                        android:id="@+id/ownernumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:visibility="gone"
+                        android:enabled="false"
+                        android:maxLength="10"
+                        android:inputType="phone"
+                        android:textColor="@color/teal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/teal"
+
+                        android:textSize="20sp"
+                        android:text="Room coordinates:"/>
+
+                    <TextView
+                        android:id="@+id/suggestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="latitude"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/backgroundshape2"
+                        android:maxLength="10"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:textColor="@color/teal" />
+
+                    <EditText
+                        android:id="@+id/longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="longitude"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/backgroundshape2"
+                        android:maxLength="10"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:textColor="@color/teal" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/mapcv"
+                            android:layout_margin="20dp"
+                            android:layout_gravity="start"
+                            android:visibility="gone"
+                            app:cardElevation="8dp"
+                            android:onClick="showmap"
+                            app:cardCornerRadius="4dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/location"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_gravity="center|bottom"
+                                android:text="location"
+                                android:textColor="@color/teal"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <Button
+                            android:id="@+id/manual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/fancy_button_background"
+                            android:onClick="showcoordinatesformanual"
+                            android:text="enter manually"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            android:textColor="@color/white"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/automatic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:padding="5dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/fancy_button_background"
+                            android:onClick="showcoordinatesforapp"
+                            android:text="let the app do it"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:orientation="vertical"
+
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="room type:"
+                            android:textSize="18sp"
+
+                            android:layout_marginTop="16dp"
+                            android:textColor="@color/teal"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton1PG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PG"
+
+                            android:enabled="false"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/teal"
+                            android:buttonTint="@color/teal"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton2NONPG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Non-PG"
+                            android:enabled="false"
+
+                            android:layout_marginLeft="10dp"
+                            android:buttonTint="@color/teal"
+                            android:textColor="@color/teal" />
+
+                    </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="room Facilities:"
+                        android:textSize="18sp"
+
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/teal"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/facility_input"
+                            android:hint="add room facility one by one"
+                            android:layout_width="match_parent"
+
+                            android:textColor="@color/teal"
+                            android:textColorHint="@color/teal"
+                            android:background="@drawable/backgroundshape2"
+                            android:visibility="gone"
+                            android:inputType="textMultiLine"
+                            android:scrollHorizontally="false"
+                            android:singleLine="false"
+                            android:ellipsize="none"
+                            android:overScrollMode="always"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"/>
+
+                        <Button
+                            android:id="@+id/add_facility_button"
+                            android:text="Add Facility"
+                            android:background="@drawable/fancy_button_background"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/white"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/facility_list"
+                            android:layout_width="match_parent"
+                            android:visibility="gone"
+                            android:layout_margin="10dp"
+
+
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/factv"
+                        android:textSize="18sp"
+                        android:enabled="false"
+
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/teal"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="room Rules:"
+                            android:textSize="18sp"
+
+                            android:layout_marginTop="16dp"
+                            android:textColor="@color/teal"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="vertical">
+
+
+
+                            <EditText
+                                android:id="@+id/rules_input"
+                                android:hint="add room facility one by one"
+                                android:layout_width="match_parent"
+                                android:inputType="textMultiLine"
+                                android:scrollHorizontally="false"
+                                android:singleLine="false"
+                                android:ellipsize="none"
+                                android:overScrollMode="always"
+                                android:textColor="@color/teal"
+                                android:background="@drawable/backgroundshape2"
+                                android:visibility="gone"
+                                android:textColorHint="@color/teal"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"/>
+
+                            <Button
+                                android:id="@+id/add_rules_button"
+                                android:text="Add Rule"
+                                android:background="@drawable/fancy_button_background"
+                                android:layout_width="match_parent"
+
+                                android:textColor="@color/white"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"/>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rules_list"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:layout_margin="10dp"
+
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundshape2"
+                            android:id="@+id/factv2"
+                            android:textSize="18sp"
+                            android:enabled="false"
+
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="16dp"
+                            android:textColor="@color/teal"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/errors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/teal"
+
+                        android:visibility="gone"/>
+                    <Button
+                        android:id="@+id/submitbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="submit"
+                        android:visibility="gone"
+                        android:text="submit"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/fancy_button_background"
+                        android:layout_marginTop="16dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                    <View
+                        android:id="@+id/fadeOverlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#80000000"
+                        android:visibility="visible"/>
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="50dp"
+        android:contentDescription="Add"
+
+        android:src="@drawable/edit"
+    app:backgroundTint="@color/teal"
+    app:tint="@android:color/white"
+    android:onClick="onFabClick" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

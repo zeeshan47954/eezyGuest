@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/imageselectorforhome"
+        android:title="home"
+        android:id="@+id/home1"
+        android:checked="true"
+        android:orderInCategory="1"
+        />
+    <item android:icon="@drawable/imageselectorforrent"
+        android:title="rented"
+        android:id="@+id/booked1"
+        android:orderInCategory="2"
+        />
+    <item android:icon="@drawable/imageselectorforrequests"
+        android:title="requests"
+        android:id="@+id/request1"
+        android:orderInCategory="3"
+        />
+
+    <item android:icon="@drawable/imageselectorforpayment"
+        android:title="payments"
+        android:id="@+id/payment1"
+        android:orderInCategory="4"
+        />
+    <item android:icon="@drawable/imageselectorforprofile"
+        android:title="profile"
+        android:id="@+id/profile1"
+        android:orderInCategory="5"
+        />
+
+
+</menu>

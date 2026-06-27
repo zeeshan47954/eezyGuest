@@ -1,0 +1,74 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+
+    android:elevation="8dp"
+
+    android:padding="20dp">
+
+    <!-- Title of the dialog -->
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you are trying to cancel the room booking.Once confirmed,refund process will be initiated.As already informed,You will recieve only 82% of the original amount back and you will no longer be a tenant"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/alert"
+        android:textStyle="bold"
+        android:textColor="@color/red" />
+    <TextView
+        android:id="@+id/dialogmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="are you sure?"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/red" />
+
+    <!-- Message -->
+
+    <!-- OK Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fancy_button_background"
+            android:text="Cancel"
+android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/fancy_button_background2"
+            android:text="leave"
+            android:backgroundTint="@color/red"
+
+android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/add"
+        android:title="addroom"
+        android:icon="@drawable/add"
+        android:orderInCategory="2"
+        app:iconTint="@null"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/refresh"
+        android:title="refresh"
+        android:icon="@drawable/refresh"
+        app:iconTint="@null"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:background="@color/teal"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbmain"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Room and Owner Information"
+            app:titleTextColor="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+
+                app:cardElevation="8dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                   >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="OWNER INFORMATION"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:padding="16dp"
+                            android:gravity="center"
+
+                            android:textColor="@color/teal"/>
+
+                    <EditText
+                        android:id="@+id/ownername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/backgroundshape2"
+                        android:hint=" Enter Owner Name"
+                        android:overScrollMode="always"
+
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/teal"
+                        android:textColorHint="@color/teal" />
+
+
+                    <EditText
+                        android:id="@+id/owneraddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Enter Owner Address"
+                        android:layout_marginBottom="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/teal"
+                        android:background="@drawable/backgroundshape2"
+
+                        android:textColorHint="@color/teal" />
+
+                        <EditText
+                            android:id="@+id/ownernumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:hint=" Enter Contact No"
+                            android:textColor="@color/teal"
+                            android:maxLength="10"
+                            android:background="@drawable/backgroundshape2"
+
+                            android:inputType="phone"
+                            android:textColorHint="@color/teal" />
+
+                    </LinearLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:gravity="center"
+
+                        android:hint="ROOM DETAILS"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:textColorHint="@color/teal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/roomname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Enter room name/hostel name"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/backgroundshape2"
+                        android:overScrollMode="always"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/teal"
+                        android:textColorHint="@color/teal" />
+                    <EditText
+                        android:id="@+id/institution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter the nearest college/university"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/backgroundshape2"
+                        android:overScrollMode="always"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/teal"
+                        android:textColorHint="@color/teal" />
+
+                    <EditText
+                        android:id="@+id/roomlocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/backgroundshape2"
+                        android:overScrollMode="always"
+                        android:textColor="@color/teal"
+                        android:hint=" Enter room address"
+                        android:inputType="textMultiLine"
+                        android:textColorHint="@color/teal" />
+
+
+                    <EditText
+                        android:id="@+id/roompricing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backgroundshape2"
+
+                        android:textColor="@color/teal"
+                        android:layout_marginBottom="20dp"
+                        android:hint=" Enter room price per head (in rupees)"
+                        android:inputType="number"
+
+                        android:textColorHint="@color/teal" />
+
+                    <EditText
+                        android:id="@+id/roomcapacity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint=" Enter room capacity"
+                        android:inputType="number"
+android:textColor="@color/teal"
+                        android:background="@drawable/backgroundshape2"
+
+                        android:textColorHint="@color/teal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:hint=" SELECT DISTRICT:"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColorHint="@color/teal" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp" />
+
+
+                </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/teal"
+                        android:textSize="20sp"
+                        android:text="  Enter Room coordinates:"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/suggestion"
+android:textAlignment="center"
+                        android:textSize="16dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/teal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/suggestion2"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/teal"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/suggestion3"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/teal"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <EditText
+                        android:id="@+id/latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+
+                        android:hint="latitude"
+                        android:background="@drawable/backgroundshape2"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:visibility="gone"
+                        android:textColor="@color/teal"
+                        android:textColorHint="@color/teal" />
+
+                    <EditText
+                        android:id="@+id/longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:hint="longitude"
+                        android:background="@drawable/backgroundshape2"
+                        android:textColor="@color/teal"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:visibility="gone"
+                        android:textColorHint="@color/teal" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/mapcv"
+                            android:layout_margin="20dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            app:cardElevation="8dp"
+                            android:onClick="showmap"
+                            app:cardCornerRadius="4dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/location"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_gravity="center|bottom"
+                                android:text="location"
+                                android:textColor="@color/teal"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <Button
+                            android:id="@+id/manual"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+
+                            android:layout_gravity="center"
+                            android:background="@drawable/fancy_button_background"
+                            android:onClick="showcoordinatesformanual"
+                            android:text="enter manually"
+                            android:textColor="@color/white"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/automatic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/fancy_button_background"
+                            android:onClick="showcoordinatesforapp"
+                            android:text="let the app do it"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  room type:"
+                            android:textSize="16sp"
+
+                            android:layout_marginTop="18dp"
+                            android:textColor="@color/teal"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PG"
+
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/teal"
+                            android:buttonTint="@color/teal"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Non-PG"
+
+                            android:layout_marginLeft="10dp"
+                            android:buttonTint="@color/teal"
+                            android:textColor="@color/teal" />
+
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  room Facilities:\n   1.add one facility\n   2.hit 'add facility' button\n   3.continue the process to add the remaining facilities\n*this way you can also remove facilities"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+android:textAlignment="center"
+
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/teal"/>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <EditText
+                            android:id="@+id/facility_input"
+                            android:hint=" add room facility one by one here"
+                            android:layout_width="match_parent"
+                            android:textColorHint="@color/teal"
+                            android:textColor="@color/teal"
+                            android:overScrollMode="always"
+                            android:background="@drawable/backgroundshape2"
+android:inputType="textMultiLine"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"/>
+
+                        <Button
+                            android:id="@+id/add_facility_button"
+                            android:text="Add Facility"
+                            android:background="@drawable/fancy_button_background"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/facility_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" House Rules: "
+                            android:textSize="16sp"
+
+
+                            android:layout_marginTop="20sp"
+                            android:textColor="@color/teal"/>
+                        <EditText
+                            android:id="@+id/rules_input"
+                            android:hint=" add house rules one by one here"
+                            android:layout_width="match_parent"
+                            android:textColorHint="@color/teal"
+                            android:textColor="@color/teal"
+                           android:inputType="textMultiLine"
+
+                            android:overScrollMode="always"
+                            android:background="@drawable/backgroundshape2"
+
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"/>
+
+                        <Button
+                            android:id="@+id/add_rules_button"
+                            android:text="Add Rule"
+                            android:background="@drawable/fancy_button_background"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rules_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="upload profile picture below"
+                            android:textSize="20sp"
+
+
+                            android:layout_marginTop="16dp"
+                            android:textColor="@color/teal"/>
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="300dp"
+                            android:id="@+id/pfp"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:src="@drawable/image"
+
+
+                            android:scaleType="fitCenter"
+                            android:layout_margin="20dp"
+                            />
+                        <Button
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:onClick="uploadpfp"
+                            android:text="choose photo"
+                            android:id="@+id/uploadpfp"
+                            android:padding="5dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/fancy_button_background"
+                            android:layout_marginTop="16dp"/>
+                    <TextView
+                        android:id="@+id/errors"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+
+                    <Button
+                        android:id="@+id/submitbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="submit"
+                        android:text="submit"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/fancy_button_background"
+                        android:layout_marginTop="16dp"/>
+                </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

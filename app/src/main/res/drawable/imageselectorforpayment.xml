@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Icon when the item is selected (filled) -->
+    <item android:drawable="@drawable/paymentsfilled" android:state_checked="true" />
+    <!-- Icon when the item is unselected (outlined) -->
+    <item android:drawable="@drawable/payments" android:state_checked="false" />
+</selector>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Location"
+        android:textSize="20sp"
+
+        android:background="@drawable/fancy_text_background"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center" />
+
+    <!-- EditText for Location Input -->
+    <EditText
+        android:id="@+id/locationet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/backgroundshape2"
+        android:padding="5dp"
+        android:textColor="@color/teal"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter District"
+        android:textSize="20sp"
+        android:background="@drawable/fancy_text_background"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center" />
+    <!-- Scrollable Layout for Radio Buttons -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp">
+
+        <!-- RadioGroup for Locations -->
+        <RadioGroup
+            android:id="@+id/location_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/rb_anantnag"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Anantnag" />
+
+            <RadioButton
+                android:id="@+id/rb_bandipora"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Bandipora" />
+
+            <RadioButton
+                android:id="@+id/rb_baramulla"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baramulla" />
+
+            <RadioButton
+                android:id="@+id/rb_budgam"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budgam" />
+
+            <RadioButton
+                android:id="@+id/rb_ganderbal"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ganderbal" />
+
+            <RadioButton
+                android:id="@+id/rb_kulgam"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kulgam" />
+
+            <RadioButton
+                android:id="@+id/rb_kupwara"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kupwara" />
+
+            <RadioButton
+                android:id="@+id/rb_pulwama"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pulwama" />
+
+            <RadioButton
+                android:id="@+id/rb_shopian"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopian" />
+
+            <RadioButton
+                android:id="@+id/rb_srinagar"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Srinagar" />
+        </RadioGroup>
+    </ScrollView>
+
+    <!-- Filter Button at the Bottom -->
+    <Button
+        android:id="@+id/filterbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:background="@drawable/fancy_button_background"
+        android:text="Search"
+
+        android:textColor="@color/white" />
+</LinearLayout>

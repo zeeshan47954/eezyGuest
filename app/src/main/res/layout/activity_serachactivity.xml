@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nested_scroll_view"
+
+    android:background="@color/teal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".serachactivity">
+
+        <!-- Header Card with Shimmer -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            android:backgroundTint="@color/white">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                app:shimmer_auto_start="true"
+                app:shimmer_duration="2000"
+                app:shimmer_repeat_delay="500"
+                app:shimmer_repeat_mode="restart"
+                app:shimmer_base_alpha="0.7"
+                app:shimmer_highlight_alpha="1.0">
+
+                <TextView
+                    android:id="@+id/searchtextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🏠 Search Your Desired Room"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="28sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/teal"/>
+                <TextView
+                    android:id="@+id/found"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🏠 rooms found"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textSize="28sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/teal"/>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Main Form Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="@color/white">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Distance Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/section_background"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📍 Distance Range"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal"
+                        android:drawablePadding="8dp"
+                        android:layout_marginBottom="12dp"/>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/distance_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/backgroundshape98"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:spinnerMode="dropdown"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+
+                <!-- District Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/section_background"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🗺️ District"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal"
+                        android:layout_marginBottom="12dp"/>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/district_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/backgroundshape98"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:spinnerMode="dropdown"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+
+                <!-- Institution Section -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/kl"
+                    android:background="@drawable/section_background"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="30dp"
+                    android:layout_marginBottom="20dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🎓 Institution"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select based on district chosen above"
+                        android:textSize="16sp"
+                        android:textColor="@color/teal"
+
+                        android:layout_marginBottom="12dp"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/institution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/teal"
+                        android:hint="enter institution"
+                        android:padding="5dp"
+                        android:textColor="@color/teal"
+                        android:layout_gravity="center"
+                        android:background="@drawable/backgroundshape2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:dropDownHeight="wrap_content"
+                        android:dropDownWidth="match_parent"
+                        android:overlapAnchor="false"
+                        />
+                </LinearLayout>
+
+                <!-- Room Type Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/section_background"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🛏️ Room Type"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal"
+                        android:layout_marginBottom="12dp"/>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/roomtype_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/backgroundshape98"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:spinnerMode="dropdown"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+
+                <!-- Capacity Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/section_background"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👥 Capacity"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal"
+                        android:layout_marginBottom="12dp"/>
+
+                    <EditText
+                        android:id="@+id/capacity"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:hint="Enter room capacity"
+                        android:textColorHint="#9E9E9E"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:textSize="16sp"
+                        android:inputType="number"
+                        android:background="@drawable/spinner_background"
+                        android:textColor="@color/teal"/>
+                </LinearLayout>
+
+                <!-- Price Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/section_background"
+                    android:padding="16dp"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💰 Price Range"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal"
+                        android:layout_marginBottom="12dp"/>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/price_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/backgroundshape98"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:spinnerMode="dropdown"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+
+                <!-- Search Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Search Rooms"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/teal"
+                    app:cornerRadius="32dp"
+                    app:elevation="8dp"
+                    app:icon="@android:drawable/ic_search_category_default"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp"
+                    android:onClick="search"
+               />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Results Container -->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

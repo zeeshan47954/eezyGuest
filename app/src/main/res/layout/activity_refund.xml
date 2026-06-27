@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fancy_text_background"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="As you already know only 85% of the original payment is refunded if you  cancel your booking.
+"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/refund_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Cancellation"
+        android:onClick="refund"
+        android:textColor="@color/white"
+        android:background="@drawable/fancy_button_background"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

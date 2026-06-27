@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state - larger filled circle -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/teal"/>
+            <size android:width="10dp" android:height="10dp"/>
+        </shape>
+    </item>
+
+    <!-- Unselected state - smaller filled circle with transparency -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#80008080"/> <!-- Semi-transparent teal -->
+            <size android:width="10dp" android:height="10dp"/>
+        </shape>
+    </item>
+</selector>

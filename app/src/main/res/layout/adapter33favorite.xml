@@ -1,0 +1,125 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <!-- ImageView for the main image -->
+        <ImageView
+            android:id="@+id/imv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tick"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            />
+
+
+
+
+</FrameLayout>
+        <!-- Text content below the image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="8dp">
+
+            <!-- Title TextView -->
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/backgroundshape2"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/teal"
+                android:text="Title" />
+
+            <!-- Location TextView -->
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/backgroundshape2"
+                android:drawableTop="@drawable/location3"
+                android:drawablePadding="4dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:textColor="@color/teal"
+                android:text="Location" />
+
+            <!-- Gender Info TextView -->
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="start"
+
+                android:textSize="14sp"
+                android:textColor="@color/red"
+                android:text="current  occupants:" />
+            <TextView
+                android:id="@+id/genders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/backgroundshape2"
+                android:textSize="14sp"
+                android:textColor="@color/teal"
+                android:text="Gender Info" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="start"
+
+                android:textSize="14sp"
+                android:textColor="@color/red"
+                android:text="price per head:" />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/backgroundshape2"
+                android:textSize="20sp"
+                android:textColor="@color/teal"
+                />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fancy_button_background"
+                android:layout_marginTop="10dp"
+                android:text="remove from favorites"
+                android:id="@+id/removefavorite"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
